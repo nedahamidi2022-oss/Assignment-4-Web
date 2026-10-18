@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+    color: #16302B;
+}
+
+.train-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+}
+
+.train-header {
+    background-color: #0F6B5F;
+    color: #ffffff;
+    padding: 24px;
+}
+
+.btn-primary-custom {
+    background-color: #F2A93B;
+    border-color: #F2A93B;
+    color: #16302B;
+    font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+    background-color: #d99533;
+    border-color: #d99533;
+    color: #16302B;
+}
+
+/* Custom Active Color for One way / Round trip */
+.btn-check:checked + .btn-custom-radio {
+    background-color: #0F6B5F;
+    border-color: #0F6B5F;
+    color: #ffffff;
+}
+
+.btn-custom-radio {
+    color: #0F6B5F;
+    border-color: #0F6B5F;
+}
+
+.btn-custom-radio:hover {
+    background-color: rgba(15, 107, 95, 0.1);
+    border-color: #0F6B5F;
+    color: #0F6B5F;
+}
+
+@media (max-width: 767.98px) {
+    .button-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-find {
+        order: 1;
+        margin-bottom: 10px;
+    }
+    .btn-clear {
+        order: 2;
+    }
+}
+
+input:user-invalid ~ .invalid-feedback,
+select:user-invalid ~ .invalid-feedback,
+textarea:user-invalid ~ .invalid-feedback {
+    display: block;
+}

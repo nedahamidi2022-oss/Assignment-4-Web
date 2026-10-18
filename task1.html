@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a train ticket - Task 1</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="py-5">
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+                <div class="train-card">
+                    <div class="train-header">
+                        <h2 class="mb-0 fs-4 fw-bold">Book a train ticket</h2>
+                    </div>
+
+                    <div class="p-4 p-md-5">
+                        <form>
+                            <div class="mb-4">
+                                <div class="btn-group" role="group" aria-label="Trip type">
+                                    <input type="radio" class="btn-check" name="tripType" id="oneway" autocomplete="off" checked>
+                                    <label class="btn btn-custom-radio rounded-pill px-4" for="oneway">One way</label>
+
+                                    <input type="radio" class="btn-check" name="tripType" id="roundtrip" autocomplete="off">
+                                    <label class="btn btn-outline-secondary rounded-pill px-4 ms-2" for="roundtrip">Round trip</label>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="from" class="form-label text-muted small fw-bold">From</label>
+                                    <input type="text" class="form-control" id="from" value="Astana" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="to" class="form-label text-muted small fw-bold">To</label>
+                                    <input type="text" class="form-control" id="to" value="Almaty" required>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <label for="departure" class="form-label text-muted small fw-bold">Departure</label>
+                                    <input type="date" class="form-control" id="departure" required>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="return" class="form-label text-muted small fw-bold">Return</label>
+                                    <input type="date" class="form-control" id="return">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="passengers" class="form-label text-muted small fw-bold">Passengers</label>
+                                    <select class="form-select" id="passengers" required>
+                                        <option value="1" selected>1 adult</option>
+                                        <option value="2">2 adults</option>
+                                        <option value="3">3 adults</option>
+                                        <option value="4">4 adults</option>
+                                        <option value="5">5 adults</option>
+                                        <option value="6">6 adults</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label text-muted small fw-bold d-block">Carriage class</label>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="seat" checked required>
+                                    <label class="form-check-label" for="seat">Seat</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="coupe" required>
+                                    <label class="form-check-label" for="coupe">Coupé</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="carriageClass" id="sleeper" required>
+                                    <label class="form-check-label" for="sleeper">Sleeper</label>
+                                </div>
+                            </div>
+
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label text-muted small fw-bold">Phone</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text text-white" style="background-color: #0F6B5F; border-color: #0F6B5F;">+7</span>
+                                        <input type="tel" class="form-control" id="phone" placeholder="701-234-5678" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label text-muted small fw-bold">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="form-check mb-2">
+                                    <input class="form-check-input" type="checkbox" id="smsCheck">
+                                    <label class="form-check-label text-muted" for="smsCheck">Also send the ticket by SMS</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="rulesCheck" required>
+                                    <label class="form-check-label text-muted" for="rulesCheck">I agree with the carriage rules</label>
+                                </div>
+                            </div>
+
+                            <div class="button-container d-flex justify-content-end gap-2">
+                                <button type="reset" class="btn btn-outline-secondary rounded-pill px-4 btn-clear">Clear</button>
+                                <button type="submit" class="btn btn-primary-custom rounded-pill px-4 btn-find">Find trains</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

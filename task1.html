@@ -31,12 +31,16 @@
 
                             <div class="row g-3 mb-3">
                                 <div class="col-md-6">
-                                    <label for="from" class="form-label text-muted small fw-bold">From</label>
-                                    <input type="text" class="form-control" id="from" value="Astana" required>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="from" placeholder="From" value="Astana" required>
+                                        <label for="from" class="text-muted">From</label>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="to" class="form-label text-muted small fw-bold">To</label>
-                                    <input type="text" class="form-control" id="to" value="Almaty" required>
+                                    <div class="form-floating">
+                                        <input type="text" class="form-control" id="to" placeholder="To" value="Almaty" required>
+                                        <label for="to" class="text-muted">To</label>
+                                    </div>
                                 </div>
                             </div>
 
@@ -99,20 +103,4 @@
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" id="rulesCheck" required>
-                                    <label class="form-check-label text-muted" for="rulesCheck">I agree with the carriage rules</label>
-                                </div>
-                            </div>
-
-                            <div class="button-container d-flex justify-content-end gap-2">
-                                <button type="reset" class="btn btn-outline-secondary rounded-pill px-4 btn-clear">Clear</button>
-                                <button type="submit" class="btn btn-primary-custom rounded-pill px-4 btn-find">Find trains</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</body>
-</html>
+                                    <label class="form-check-label
